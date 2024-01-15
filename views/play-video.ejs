@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="container content cont">
+        <div class="play-video">
+            <video controls="controls" autplay="autplay">
+                <video src=""></video>
+            </video>
+            <%- include('./comments/tags.ejs') %>
+            <%- include('./comments/play-video-info.ejs') %>
+            <hr>
+            <%- include('./users/plubisher.ejs') %>
+            <%- include('./comments/newcom.ejs') %>
+            <%- include('./comments/oldcom.ejs') %>
+        </div>
+        <div class="blockk"></div>
+        <%- include('./partials/side-video-list.ejs') %>
+    </div>
+    <%- include('./partials/sidebar.ejs') %>
+</body>
+</html>
